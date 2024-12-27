@@ -54,13 +54,13 @@ See the full list of dependencies in the `package.json` file.
 You can use any Java IDE, but **IntelliJ IDEA** or **Eclipse** is recommended for Spring Boot projects.
 
 ---
-note:- kindly create your api for google maps
+note:- kindly create your own api for google maps
 ## Installation
 
 ### Frontend Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/santa-logistics.git
+   git clone https://github.com/santa-delhivery.git
    cd santa-logistics
 
 2. for Angular file (Frontend)
