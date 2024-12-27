@@ -1,213 +1,72 @@
-# <a href="https://spike-angular-free.netlify.app/dashboard">Spike Angular Free</a>
-Spike Admin Angular Dashboard
+# Santa's Logistics Tracker
 
-<!-- Main image of Template -->
-<a target="_blank" href="https://www.wrappixel.com/templates/spike-free-angular-admin-template/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/2023/10/Spike-Admin-Angular-WrapPixel-Preview-1.jpg" />
-</a>
+## Overview
+Santa's Logistics Tracker is a modern web application dashboard that allows users to simulate gift delivery, place orders, track real-time order delivery, and register/login with integrated authentication security for seamless user experience. This web app features an intuitive UI with visuals like charts and graphs to monitor orders. 
 
+### Key Highlights
+- **Fortune Wheel for Gifts**: Fun and interactive gift rewards.
+- **Real-Time Tracker**: Monitor deliveries in real time.
+- **Google Maps Integration**: Embed maps seamlessly using Angular's Google Maps library.
+- **Toastr Notifications**: Provide elegant user feedback.
+- **Multi-Language Support**: Translation functionality with `@ngx-translate/core`.
 
-# Compare with Premium Version 🌓
+The backend Spring Boot application leverages MongoDB for data persistence and provides RESTful APIs for logistics, route optimization, and gift tracking.
 
-<table>
-<thead>
-<tr>
-<th>Spike Free Angular Admin Version</th>
-<th>Spike Angular Admin Version</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-  <td>
-    <a href="https://spike-angular-free.netlify.app/dashboard">Live Preview</a>
-  </td>
-  <td>
-  <a href="https://spike-angular-pro-main.netlify.app/dashboards/dashboard1">Live Preview</a>
-  </td>
-</tr>
-<tr>
-  <td>
-      <a href="https://www.wrappixel.com/templates/spike-free-angular-admin-template/">Download Now</a>
-  </td>
-  <td>
-    <a href="https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=33">Purchase Now</a>
-  </td>
-</tr>
-<tr>
-  <td>
-  1 Basic Dashboard
-  </td>
-  <td>
-  2+ Stunning Dashboards
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  Dashboard Figma Files
-  </td>
-</tr>
-<tr>
-  <td>
-  Angular 17 Version
-  </td>
-  <td>
-  Angular 17 Version
-  </td>
-</tr>
-<tr>
-  <td>
-  Fully Responsive Pages
-  </td>
-  <td>
-  Fully Responsive Pages
-  </td>
-</tr>
-<tr>
-  <td>
-  10+ Pages Template
-  </td>
-  <td>
-  80+ Page Templates
-  </td>
-</tr>
-<tr>
-  <td>
-  5+ UI Components
-  </td>
-  <td>
-  50+ UI Components
-  </td>
-</tr>
-<tr>
-  <td>
-  No Documentation
-  </td>
-  <td>
-  Documentation Provided
-  </td>
-</tr>
-<tr>
-  <td>
-  Easy To Customize
-  </td>
-  <td>
-  Easy To Customize
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  Right-to-Left(RTL) Verion
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  10+ Integrated Plugins
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  12+ Ready to Use App
-  </td>
-</tr>
-<tr>
-  <td>
-  -
-  </td>
-  <td>
-  1 Year Premium Support
-  </td>
-</tr>
-</tbody>
-</table>
+### Future Enhancements
+- Cloud and web server deployment.
+- Additional features in progress.
 
-# Upgrade to Premium version
+---
 
-<a target="_blank" href="https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=33">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-angular-admin-wpn.jpg" alt="">
-</a>
-<p>
-  Checkout our premium version of Spike Admin Angular Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://spike-angular-pro-main.netlify.app/dashboards/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=33">Download</a>
-</p>
+## USP Features
+- Real-time delivery tracking.
+- Gift reward mechanisms.
+- Integration of maps, notifications, and translation services for an enhanced user experience.
 
-<!-- Versions of Template -->
-# Versions
-<table>
-<thead>
-<tr>
-<th>Angular</th>
-<th>Next Js</th>
-<th>Nuxt</th>
-<th>Vue Js</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>
-  <a href="https://www.wrappixel.com/templates/spike-angular-admin-template/?ref=33" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-angular-admin-wpn.jpg" alt="" style="max-width:150px;">
-  </a>
-</td>
-<td>
-  <a href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-nextjs-admin-wpn.jpg" alt="" style="max-width:150px;">
-  </a>
-</td>
-<td>
-  <a href="https://www.wrappixel.com/templates/spike-nuxtjs-admin-template/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-nuxtjs-admin-wpn.jpg" alt="" style="max-width:150px;">
-  </a>
-</td>
-<td>
-  <a href="https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/spike-vuejs-vuetify-admin-wpn.jpg" alt="" style="max-width:150px;">
-  </a>
-</td>
-</td>
-  
-</tr>
-</tbody>
-</table>
+---
 
+## Prerequisites
 
+### Frontend
+#### Required Tools
+- **Node.js**: `>= 16.0.0 <19.0.0` (Tested with Node.js v16.20.0)
+- **npm**: `>= 8.0.0` (Comes with Node.js)
+- **Angular CLI**: `18.0.3` (Install using: `npm install -g @angular/cli`)
+- **Google APIs**: Requires API keys for:
+  - Directions API
+  - Geocoding API
+  - Maps JavaScript API
 
+#### Required Versions
+- **Angular**: v18.2.13
+- **RxJS**: ~7.5.0
+- **Zone.js**: ~0.14.7
 
+See the full list of dependencies in the `package.json` file.
 
-<!-- Useful Links of Template -->
-# Useful Links
-- <p><a href="https://www.wrappixel.com/">Admin Theme</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/spike-bootstrap-admin-dashboard/">Bootstrap Themes</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/spike-free-bootstrap-admin/">Free Bootstrap Admin Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/spike-nextjs-admin-template/">NextJs Bootstrap Template</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/">Vuejs Templates</a> from Wrappixel</p>
+### Backend
+#### Required Tools
+- **Java**: Version 17 (as specified in the Maven `pom.xml` file)
+- **Maven**: Version 3.8 or higher
+- **MongoDB**: Running instance of MongoDB (default port: `27017`)
 
+#### IDE
+You can use any Java IDE, but **IntelliJ IDEA** or **Eclipse** is recommended for Spring Boot projects.
 
-<!-- Licensing of Template -->
-# Licensing
-- <p>Copyright 2024 Wrappixel <a href="https://www.wrappixel.com/">https://wrappixel.com/</a></p>
-- <p>Licensed under MIT <a href="https://www.wrappixel.com/license/">https://wrappixel.com/license/</a></p>
+---
+note:- kindly create your api for google maps
+## Installation
 
+### Frontend Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/santa-logistics.git
+   cd santa-logistics
 
-<!-- Social Media of Adminmart -->
-# Social Media 👭🏼
-- <p>Facebook: <a href="https://www.facebook.com/wrappixel">https://www.facebook.com/wrappixel</a></p>
-- <p>Linkedin: <a href="https://www.linkedin.com/company/wrappixel/">https://www.linkedin.com/company/wrappixel/</a></p>
-- <p>Github: <a href="https://github.com/wrappixel">https://github.com/wrappixel</a></p>
-- <p>Twitter: <a href="https://twitter.com/wrappixel">https://twitter.com/wrappixel</a></p>
-- <p>Medium: <a href="https://medium.com/wrappixel">https://medium.com/wrappixel</a></p>
-- <p>Discord: <a href="https://discord.com/invite/eMzE8F6Wqs">https://discord.com/invite/eMzE8F6Wqs</a></p>
-- <p>Youtube: <a href="https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ">https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ</a></p>
+2. for Angular file (Frontend)
+    1. npm install
+    2. for start --- ng serve
 
-
+3. SpringBoot
+    1. open  main method file then run it using
+    --- run button
