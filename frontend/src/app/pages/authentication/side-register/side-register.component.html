@@ -1,0 +1,243 @@
+<div class="blank-layout-container justify-content-center">
+  <div class="auth-wrapper">
+    <div class="position-relative shaper-wrapper">
+      <div class="w-100 position-relative rounded bg-white auth-card">
+        <div class="auth-body">
+          <a [routerLink]="['/dashboards/dashboard1']" class="m-t-20 d-flex">
+            <img src="./assets/images/logos/Santa.png" class="align-middle m-2" style="width: 120px;" />
+          </a>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div
+                class="align-items-center justify-content-center d-none d-lg-flex"
+              >
+                <img
+                  src="/assets/images/backgrounds/login3-bg.png"
+                  alt="login"
+                  style="max-width: 500px"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="d-flex align-items-start align-items-lg-center justify-content-center"
+              >
+                <div class="row justify-content-center w-100">
+                  <div class="col-lg-11">
+                    <h4 class="f-w-700 f-s-30 lh-base m-0">
+                      Welcome to Santa's Admin
+                    </h4>
+                    <form
+                      class="m-t-30 grid-container"
+                      [formGroup]="form"
+                      (ngSubmit)="submit()"
+                    >
+                      <!-- First Row: Name and Username -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <mat-label
+                            class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                            >Name</mat-label
+                          >
+                          <mat-form-field
+                            appearance="outline"
+                            class="w-100"
+                            color="primary"
+                          >
+                            <input matInput formControlName="name" />
+                            <mat-hint
+                              *ngIf="
+                                f['name'].touched && f['name'].invalid
+                              "
+                            >
+                              <mat-hint
+                                *ngIf="f['name'].hasError('required')"
+                                class="text-error"
+                              >
+                                Name is required.
+                              </mat-hint>
+                              <mat-hint
+                                *ngIf="f['name'].hasError('minlength')"
+                                class="text-error"
+                              >
+                                Name should be at least 6 characters.
+                              </mat-hint>
+                            </mat-hint>
+                          </mat-form-field>
+                        </div>
+
+                        <div class="col-md-6">
+                          <mat-label
+                            class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                            >Username</mat-label
+                          >
+                          <mat-form-field
+                            appearance="outline"
+                            class="w-100"
+                            color="primary"
+                          >
+                            <input matInput formControlName="username" />
+                            <mat-hint
+                              *ngIf="
+                                f['username'].touched && f['username'].invalid
+                              "
+                             >
+                              <mat-hint
+                                *ngIf="f['username'].hasError('required')"
+                                class="text-error"
+                              >
+                                Username is required.
+                              </mat-hint>
+                              <mat-hint
+                                *ngIf="f['username'].hasError('minlength')"
+                                class="text-error"
+                              >
+                                Username should be at least 4 characters.
+                              </mat-hint>
+                            </mat-hint>
+                            <mat-hint *ngIf="usernameAvailable === true" class="text-success">
+                              Username is available.
+                            </mat-hint>
+                            <mat-hint *ngIf="usernameAvailable === false" class="text-error">
+                              Username is already taken.
+                            </mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+
+                      <!-- Second Row: Email and Mobile -->
+                      <div class="row">
+                        <div class="col-md-6">
+                          <mat-label
+                            class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                            >Email Address</mat-label
+                          >
+                          <mat-form-field
+                            appearance="outline"
+                            class="w-100"
+                            color="primary"
+                          >
+                            <input
+                              matInput
+                              type="email"
+                              formControlName="email"
+                            />
+                            <mat-hint
+                              *ngIf="
+                                f['email'].touched && f['email'].invalid
+                              "
+                            >
+                              <mat-hint
+                                *ngIf="f['email'].hasError('required')"
+                                class="text-error"
+                              >
+                                Email is required.
+                              </mat-hint>
+                              <mat-hint
+                                *ngIf="f['email'].hasError('email')"
+                                class="text-error"
+                              >
+                                Invalid email format.
+                              </mat-hint>
+                            </mat-hint>
+                          </mat-form-field>
+                        </div>
+
+                        <div class="col-md-6">
+                          <mat-label
+                            class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                            >Mobile Number</mat-label
+                          >
+                          <mat-form-field
+                            appearance="outline"
+                            class="w-100"
+                            color="primary"
+                          >
+                            <input matInput formControlName="mobile" maxlength="10"/>
+                            <mat-hint
+                              *ngIf="
+                                f['mobile'].touched && f['mobile'].invalid
+                              "
+                            >
+                              <mat-hint
+                                *ngIf="f['mobile'].hasError('required')"
+                                class="text-error"
+                              >
+                                Mobile number is required.
+                              </mat-hint>
+                              <mat-hint
+                                *ngIf="f['mobile'].hasError('pattern')"
+                                class="text-error"
+                              >
+                                Invalid mobile number.
+                              </mat-hint>
+                            </mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+
+                      <!-- Third Row: Password -->
+                      <div class="row">
+                        <div class="col-md-12">
+                          <mat-label
+                            class="mat-subtitle-2 f-s-14 f-w-600 m-b-12 d-block"
+                            >Password</mat-label
+                          >
+                          <mat-form-field
+                            appearance="outline"
+                            class="w-100"
+                            color="primary"
+                          >
+                            <input
+                              matInput
+                              type="password"
+                              formControlName="password"
+                            />
+                            <mat-hint
+                              *ngIf="
+                                f['password'].touched &&
+                                f['password'].invalid
+                              "
+                            >
+                              <mat-hint
+                                *ngIf="f['password'].hasError('required')"
+                                class="text-error"
+                              >
+                                Password is required.
+                              </mat-hint>
+                            </mat-hint>
+                          </mat-form-field>
+                        </div>
+                      </div>
+
+                      <!-- Submit Button -->
+                      <button
+                        mat-flat-button
+                        color="primary"
+                        class="w-100 "
+                        [disabled]="!form.valid"
+                      >
+                        Sign Up
+                      </button>
+                    </form>
+
+                    <span class="d-block f-w-500 d-block m-t-24">
+                      Already have an Account?
+                      <a
+                        [routerLink]="['/authentication/login']"
+                        class="text-decoration-none text-primary f-w-500 f-s-14"
+                      >
+                        Sign In</a
+                      >
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

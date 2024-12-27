@@ -1,0 +1,54 @@
+<mat-card class="cardWithShadow theme-card">
+  <mat-card-header>
+    <mat-card-title class="m-b-0">Gift Wheel</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="b-t-1">
+    <div class="fortune-wheel-container">
+      <div class="wheel" [ngStyle]="{transform: 'rotate(' + rotation + 'deg)'}">
+        <div class="wheel-inner">
+          <div class="wheel-section" *ngFor="let gift of gifts; let i = index"
+               [ngStyle]="{transform: 'rotate(' + (360 / gifts.length) * i + 'deg)'}">
+            <div class="gift-section">
+              <div class="gift-label">
+                <i [class]="gift.icon"></i>
+                <span>{{ gift.name }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div *ngIf="result" class="result">
+        <p>🎉 Congratulations! You won: {{ result.name }} 🎉</p>
+      </div>
+
+      <button
+        mat-raised-button
+        color="accent"
+        class="order-now"
+        *ngIf="result && !orderPlaced"
+        (click)="orderNow(result)"
+      >
+        Order Now
+      </button>
+      <button
+        mat-raised-button
+        color="primary"
+        class="spin-button"
+        [disabled]="spinning"
+        (click)="spinWheel()"
+      >
+        Spin the Wheel!
+      </button>
+
+      <div *ngIf="deliveryProgress.length > 0" class="delivery-progress">
+        <h3>Delivery Progress</h3>
+        <ul>
+          <li *ngFor="let location of deliveryProgress">
+            <p>{{ location.timestamp }} - {{ location.lat }}, {{ location.lng }}</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

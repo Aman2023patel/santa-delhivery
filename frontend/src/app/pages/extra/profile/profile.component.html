@@ -1,0 +1,43 @@
+<mat-card class="cardWithShadow theme-card">
+  <mat-card-header>
+      <mat-card-title class="m-b-0">My Profile</mat-card-title>
+  </mat-card-header>
+  <mat-card-content class="b-t-1">
+      <div class="row">
+          <div class="col-lg-6">
+              <mat-card class="b-1 shadow-none">
+                  <mat-card-header>
+                      <mat-card-title>Details</mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content class="b-t-1">
+                      <img src="/assets/images/profile/user-1.jpg" class="rounded-circle object-cover" width="50" />
+                      <p><strong>Name:</strong> {{ user?.name || 'N/A' }}</p>
+                      <p><strong>Email:</strong> {{ user?.email || 'user@gmail.com' }}</p>
+                      <p><strong>Mobile:</strong> {{ user?.mobile || 'N/A' }}</p>
+                      <p><strong>Address:</strong> {{ userAddress || 'N/A' }}</p>
+                  </mat-card-content>
+              </mat-card>
+          </div>
+
+          <div class="col-lg-6">
+              <mat-card class="b-1 shadow-none">
+                  <mat-card-header>
+                      <mat-card-title>Orders</mat-card-title>
+                  </mat-card-header>
+                  <mat-card-content class="b-t-1">
+                      <p><strong>Total Orders:</strong> {{ totalOrders }}</p>
+                      <mat-list>
+                          <mat-list-item *ngFor="let order of orders">
+                              <div class="order-item">
+                                  <p><strong>Order ID:</strong> {{ order.id }}</p>
+                                  <p><strong>Gift Name:</strong> {{ order.giftName }}</p>
+                                  <p><strong>Status:</strong> {{ order.status }}</p>
+                              </div>
+                          </mat-list-item>
+                      </mat-list>
+                  </mat-card-content>
+              </mat-card>
+          </div>
+      </div>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,31 @@
+<mat-sidenav-container class="mainWrapper blue_theme light-theme" autosize autoFocus dir="ltr">
+  <mat-sidenav #leftsidenav [mode]="isOver ? 'over' : 'side'" [opened]="!isOver"
+    (openedChange)="onSidenavOpenedChange($event)" (closedStart)="onSidenavClosedStart()" class="sidebarNav">
+
+    <div class="flex-layout">
+      <app-sidebar (toggleMobileNav)="sidenav.toggle()" [showToggle]="isOver"></app-sidebar>
+
+      <ng-scrollbar class="position-relative" style="height: 100%">
+        <mat-nav-list class="sidebar-list">
+          <!-- Updated ngFor with trackBy -->
+          <div *ngFor="let item of navItems; trackBy: trackByFn">
+            <app-nav-item [item]="item" (notify)="sidenav.toggle()"></app-nav-item>
+          </div>
+        </mat-nav-list>
+      </ng-scrollbar>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content class="contentWrapper p-l-24 p-r-24" #content>
+    <main class="pageWrapper maxWidth">
+      <ng-container>
+        <app-header [showToggle]="!isOver" (toggleCollapsed)="toggleCollapsed()"
+          (toggleMobileNav)="sidenav.toggle()"></app-header>
+      </ng-container>
+
+      <div class="m-t-30">
+        <router-outlet></router-outlet>
+      </div>
+    </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
