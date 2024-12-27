@@ -25,6 +25,12 @@ The backend Spring Boot application leverages MongoDB for data persistence and p
 
 ---
 
+Screen Shots-------
+![image](https://github.com/user-attachments/assets/8ad36352-91aa-40b0-b7b3-4760d0af0fd3)
+
+
+
+
 ## Prerequisites
 
 ### Frontend
