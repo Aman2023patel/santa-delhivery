@@ -31,13 +31,7 @@ Screen Shots-------
 
 ![image](https://github.com/user-attachments/assets/a4f76277-ce70-4a2d-a06b-73b70a929e37)
 
-![image](https://github.com/user-attachments/assets/23446e24-2326-424d-b2a1-91a2c4bd600f)
-
-
-
-Demo Video Drive Link ---
-https://drive.google.com/file/d/1RjgpkbAvBzBZl4X0ptXyUE_SF4Sm5zQw/view?usp=drive_link
-
+![image](https://github.com/user-attachments/assets/23446e24-2326-424d-b2a1-91a2c4bd600
 
 
 ## Prerequisites
